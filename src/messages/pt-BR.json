@@ -1,5 +1,10 @@
 {
-  "HomePage": {
-    "title": "Quiet charm store"
+  "pages": {
+    "home_page": {
+      "title": "Quiet charm store"
+    }
+  },
+  "commons": {
+    "app_name": "Quiet charm store"
   }
 }
