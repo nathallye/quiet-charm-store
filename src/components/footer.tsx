@@ -5,8 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t">
-      <div className="p-5 flex-center">{`${currentYear} ${t("app_name")} ${t(
+    <footer className="border-t flex items-center justify-center border-gray-200/70">
+      <div className="p-5 flex-center">{`${currentYear} ${t("app_name")}. ${t(
         "copyright"
       )}`}</div>
     </footer>

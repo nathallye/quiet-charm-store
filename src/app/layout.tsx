@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 
 import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from "@/lib/constants";
 import "@/styles/globals.css";
@@ -30,11 +31,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
