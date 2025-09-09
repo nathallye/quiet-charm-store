@@ -15,7 +15,7 @@ const Header = () => {
       <div className="flex w-full items-center">
         <Link href="/" className="">
           <Image
-            className="rounded-s"
+            className="rounded-sm"
             src="/img/logos/1.png"
             alt={`${t("app_name")} logo`}
             height={58}

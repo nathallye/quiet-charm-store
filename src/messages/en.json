@@ -2,6 +2,11 @@
   "pages": {
     "home_page": {
       "title": "Quiet Charm Store"
+    },
+    "not_found": {
+      "back_to_home": "Back to home",
+      "description": "Could not find requested resource",
+      "title": "Not Found"
     }
   },
   "commons": {
