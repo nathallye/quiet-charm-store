@@ -8,7 +8,9 @@ const HomePage = () => {
 
   return (
     <div className="space-y-8">
-      <h2 className="h2-bold">{t("latest_products")}</h2>
+      <h2 className="font-medium mx-10 my-4 text-2xl">
+        {t("latest_products")}
+      </h2>
       <ProductList
         title="Newest Arrivals"
         data={sampleData.products}

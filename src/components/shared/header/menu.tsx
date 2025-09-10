@@ -37,10 +37,10 @@ const Menu = () => {
         </nav>
         <nav className="md:hidden">
           <Sheet>
-            <SheetTrigger className="align-middle">
+            <SheetTrigger>
               <EllipsisVertical />
             </SheetTrigger>
-            <SheetContent className="flex flex-col items-start">
+            <SheetContent className="flex flex-col items-start p-4">
               <SheetTitle>{t("sheet_title")}</SheetTitle>
               <ModeToggle />
               <Button asChild variant="ghost">
@@ -49,7 +49,7 @@ const Menu = () => {
                   {t("buttons.cart")}
                 </Link>
               </Button>
-              <Button asChild>
+              <Button asChild className="bg-amber-700 hover:bg-amber-600">
                 <Link href="/sign-in">
                   <UserIcon />
                   {t("buttons.sign_in")}
