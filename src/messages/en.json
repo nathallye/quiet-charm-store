@@ -1,6 +1,28 @@
 {
+  "commons": {
+    "app_name": "Quiet Charm Store",
+    "copyright": "All Rights Reserved"
+  },
+  "header": {
+    "app_name": "Quiet Charm Store",
+    "buttons": {
+      "cart": "Cart",
+      "sign_in": "Sign In"
+    },
+    "drop_down": {
+      "label": "Appearance",
+      "checkbox_items": {
+        "system": "System",
+        "dark": "Dark",
+        "light": "Light"
+      }
+    },
+    "sheet_title": "Menu"
+  },
   "pages": {
     "home_page": {
+      "latest_products": "Latest Products",
+      "no_product_found": "No product found",
       "title": "Quiet Charm Store"
     },
     "not_found": {
@@ -8,9 +30,5 @@
       "description": "Could not find requested resource",
       "title": "Not Found"
     }
-  },
-  "commons": {
-    "app_name": "Quiet Charm Store",
-    "copyright": "All Rights Reserved"
   }
 }

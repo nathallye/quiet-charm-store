@@ -11,7 +11,7 @@ const NotFound = () => {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Image
         className="rounded-sm pb-2"
-        src="/img/logos/1.png"
+        src="/images/logos/1.png"
         alt={`${t("commons.app_name")} logo`}
         height={58}
         width={58}

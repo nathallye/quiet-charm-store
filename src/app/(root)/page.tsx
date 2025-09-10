@@ -1,9 +1,21 @@
 import { useTranslations } from "next-intl";
 
+import { sampleData } from "@/db/sample-data";
+import { ProductList } from "@/components/shared/product/product-list";
+
 const HomePage = () => {
   const t = useTranslations("pages.home_page");
 
-  return <div className="py-4 px-8">{t("title")}</div>;
+  return (
+    <div className="space-y-8">
+      <h2 className="h2-bold">{t("latest_products")}</h2>
+      <ProductList
+        title="Newest Arrivals"
+        data={sampleData.products}
+        limit={4}
+      />
+    </div>
+  );
 };
 
 export default HomePage;

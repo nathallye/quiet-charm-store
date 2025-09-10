@@ -1,14 +1,11 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
-import { ShoppingCart, UserIcon } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import Menu from "./menu";
 
-import ModelToggle from "./model-toggle";
-
-const Header = () => {
-  const t = useTranslations("commons");
+export const Header = () => {
+  const t = useTranslations("header");
 
   return (
     <header className="py-4 px-8 flex flex-row items-center border-b border-gray-200/70">
@@ -16,7 +13,7 @@ const Header = () => {
         <Link href="/" className="">
           <Image
             className="rounded-sm"
-            src="/img/logos/1.png"
+            src="/images/logos/1.png"
             alt={`${t("app_name")} logo`}
             height={58}
             width={58}
@@ -28,21 +25,7 @@ const Header = () => {
         </span>
       </div>
 
-      <div className="flex items-center">
-        <ModelToggle />
-        <Button asChild variant="ghost">
-          <Link href="/cart">
-            <ShoppingCart /> Cart
-          </Link>
-        </Button>
-        <Button asChild className="bg-amber-700 hover:bg-amber-600">
-          <Link href="/sign-in">
-            <UserIcon /> Sign In
-          </Link>
-        </Button>
-      </div>
+      <Menu />
     </header>
   );
 };
-
-export default Header;

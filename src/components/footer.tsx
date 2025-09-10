@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-const Footer = () => {
+export const Footer = () => {
   const t = useTranslations("commons");
   const currentYear = new Date().getFullYear();
 
@@ -12,5 +12,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
