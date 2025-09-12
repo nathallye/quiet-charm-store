@@ -5,7 +5,7 @@ export interface ProductDTO {
   description: string;
   images: string[];
   price: number;
-  brand: string;
+  collection: string;
   rating: number;
   numReviews: number;
   stock: number;

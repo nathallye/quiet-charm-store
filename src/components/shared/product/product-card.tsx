@@ -13,8 +13,8 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   const t = useTranslations("pages.home_page");
 
   return (
-    <Card className="w-full max-w-sm">
-      <CardHeader className="p-0 items-center">
+    <Card>
+      <CardHeader className="p-0">
         <Link href={`/product/${product.slug}`}>
           <Image
             priority={true}
@@ -27,7 +27,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
         </Link>
       </CardHeader>
       <CardContent className="p-4 grid gap-4">
-        <div className="text-xs">{product.brand}</div>
+        <div className="text-xs">{product.collection}</div>
         <Link href={`/product/${product.slug}`}>
           <h2 className="text-sm font-medium">{product.name}</h2>
         </Link>
