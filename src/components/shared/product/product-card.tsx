@@ -1,12 +1,14 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { ProductDTO } from "@/dto";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+
+import { ProductType } from "@/types";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+
 import { ProductPrice } from "./product-price";
 
 interface ProductCardProps {
-  product: ProductDTO;
+  product: ProductType;
 }
 
 export const ProductCard = ({ product }: ProductCardProps) => {
