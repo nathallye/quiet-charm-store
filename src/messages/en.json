@@ -20,16 +20,33 @@
     "sheet_title": "Menu"
   },
   "pages": {
-    "home_page": {
+    "home": {
       "latest_products": "Latest Products",
-      "no_product_found": "No product found",
-      "out_of_stock": "Out of Stock",
+      "newest_arrivals": "Newest Arrivals",
       "title": "Quiet Charm Store"
     },
     "not_found": {
       "back_to_home": "Back to home",
       "description": "Could not find requested resource",
       "title": "Not Found"
+    },
+    "product_details": {
+      "button": "Add to cart",
+      "description": "Description",
+      "price": "Price",
+      "reviews": "{rating} of {num_reviews} reviews",
+      "status": "Status",
+      "status_badge": {
+        "in_stock": "In stock",
+        "unavailable": "Unavailable"
+      }
+    }
+  },
+  "components": {
+    "product": {
+      "no_product_found": "No product found",
+      "out_of_stock": "Out of Stock",
+      "stars_amount": "{number} stars"
     }
   }
 }

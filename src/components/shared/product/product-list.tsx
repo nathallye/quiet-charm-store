@@ -12,7 +12,7 @@ interface ProductListProps {
 }
 
 export const ProductList = ({ data, title, limit }: ProductListProps) => {
-  const t = useTranslations("pages.home_page");
+  const t = useTranslations("components.product");
 
   // Apply limit if provided, otherwise show all products
   const limitedData = limit ? data.slice(0, limit) : data;

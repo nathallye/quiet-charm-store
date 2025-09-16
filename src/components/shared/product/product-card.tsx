@@ -12,7 +12,7 @@ interface ProductCardProps {
 }
 
 export const ProductCard = ({ product }: ProductCardProps) => {
-  const t = useTranslations("pages.home_page");
+  const t = useTranslations("components.product");
 
   return (
     <Card>
@@ -34,7 +34,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           <h2 className="text-sm font-medium">{product.name}</h2>
         </Link>
         <div className="flex-between gap-4">
-          <p>{product.rating} stars</p>
+          <p>{t("stars_amount", { number: product.rating })}</p>
           {product.stock > 0 ? (
             <ProductPrice value={Number(product.price)} />
           ) : (
