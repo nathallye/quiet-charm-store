@@ -18,10 +18,10 @@ export const ProductList = ({ data, title, limit }: ProductListProps) => {
   const limitedData = limit ? data.slice(0, limit) : data;
 
   return (
-    <div className="m-10">
-      <h2 className="h2-bold mb-4">{title}</h2>
+    <div className="mx-10 my-8">
+      <h2 className="font-bold my-4 text-amber-700  text-2xl">{title}</h2>
       {limitedData.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {limitedData.map((product: ProductType) => (
             <ProductCard key={product.slug} product={product} />
           ))}

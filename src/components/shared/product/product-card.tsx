@@ -16,19 +16,19 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 
   return (
     <Card>
-      <CardHeader className="p-0">
+      <CardHeader className="p-0 items-center justify-center">
         <Link href={`/product/${product.slug}`}>
           <Image
             priority={true}
             src={product.images![0]}
             alt={product.name}
-            className="aspect-square object-cover rounded"
-            height={300}
-            width={300}
+            className=" object-contain w-full h-full rounded-xl"
+            height={150}
+            width={150}
           />
         </Link>
       </CardHeader>
-      <CardContent className="p-4 grid gap-4">
+      <CardContent className="px-4 grid gap-2">
         <div className="text-xs">{product.collection}</div>
         <Link href={`/product/${product.slug}`}>
           <h2 className="text-sm font-medium">{product.name}</h2>

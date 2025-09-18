@@ -14,9 +14,6 @@ export const Home = ({ products }: HomeProps) => {
 
   return (
     <div className="space-y-8">
-      <h2 className="font-medium mx-10 my-4 text-2xl">
-        {t("latest_products")}
-      </h2>
       <ProductList title={t("newest_arrivals")} data={products} limit={4} />
     </div>
   );
