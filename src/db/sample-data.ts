@@ -1,4 +1,21 @@
+import { hashSync } from "bcrypt-ts-edge";
+
 export const sampleData = {
+  users: [
+    {
+      name: "John",
+      email: "admin@example.com",
+      password: hashSync("123456", 10),
+      role: "admin",
+    },
+    {
+      name: "Jane",
+      email: "jane@example.com",
+      password: hashSync("123456", 10),
+      role: "user",
+    },
+  ],
+
   products: [
     {
       name: "Vintage White Button-Up Top",
@@ -35,6 +52,42 @@ export const sampleData = {
       stock: 5,
       isFeatured: true,
       banner: "banner-1.png",
+    },
+    {
+      name: "Yellow Gingham Dress",
+      slug: "yellow_gingham_dress",
+      category: "Dresses",
+      description:
+        "A cheerful vintage-inspired midi dress featuring puff sleeves, button details, and a flattering square neckline in a bright yellow gingham pattern",
+      images: [
+        "/images/sample-products/p3-1.png",
+        "/images/sample-products/p3-2.png",
+      ],
+      price: 79.9,
+      collection: "Seaside Romance Collection",
+      rating: 4.8,
+      numReviews: 11,
+      stock: 10,
+      isFeatured: false,
+      banner: null,
+    },
+    {
+      name: "Pink Floral Dress",
+      slug: "pink_floral_dress",
+      category: "Dresses",
+      description:
+        "A romantic vintage-inspired midi dress with puff sleeves, button-down front, and a delicate tie-front detail in a soft pink floral print.",
+      images: [
+        "/images/sample-products/p4-1.png",
+        "/images/sample-products/p4-2.png",
+      ],
+      price: 89.9,
+      collection: "Vintage Elegance Collection",
+      rating: 4.7,
+      numReviews: 7,
+      stock: 10,
+      isFeatured: false,
+      banner: null,
     },
     {
       name: "High-Waisted A-Line Blue Skirt",
