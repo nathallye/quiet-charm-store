@@ -1,12 +1,12 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 
-import { Product } from "@/generated/prisma";
+import { ProductType } from "@/types";
 
 import { ProductList } from "../shared/product";
 
 interface HomeProps {
-  products: Product[];
+  products: ProductType[];
 }
 
 export const Home = ({ products }: HomeProps) => {
