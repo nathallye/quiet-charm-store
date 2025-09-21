@@ -16,7 +16,7 @@ export const prisma = new PrismaClient({ adapter }).$extends({
     product: {
       price: {
         compute(product) {
-          return product.price.toString();
+          return product.price ? product.price.toString() : null;
         },
       },
       rating: {
