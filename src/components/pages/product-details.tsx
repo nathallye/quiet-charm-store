@@ -67,7 +67,7 @@ export const ProductDetails = ({ product }: ProductDetailsProps) => {
                 )}
               </div>
               {product.stock > 0 && (
-                <div className="flex-center">
+                <div>
                   <Button className="w-full">{t("button")}</Button>
                 </div>
               )}

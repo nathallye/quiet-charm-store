@@ -40,6 +40,11 @@
         "in_stock": "In stock",
         "unavailable": "Unavailable"
       }
+    },
+    "sign_in": {
+      "app_name": "Quiet Charm Store",
+      "description": "Select a method to sign in to your account",
+      "title": "Sign In"
     }
   },
   "components": {

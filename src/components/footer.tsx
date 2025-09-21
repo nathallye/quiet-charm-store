@@ -6,9 +6,9 @@ export const Footer = () => {
 
   return (
     <footer className="border-t flex items-center justify-center border-gray-200/70">
-      <div className="p-5 flex-center">{`${currentYear} ${t("app_name")}. ${t(
-        "copyright"
-      )}`}</div>
+      <div className="p-5 items-center justify-center">{`${currentYear} ${t(
+        "app_name"
+      )}. ${t("copyright")}`}</div>
     </footer>
   );
 };
